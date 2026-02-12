@@ -2,7 +2,7 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  // CalendarIcon,
+  CalendarIcon,
   // FlagIcon,
   MapIcon,
   SparklesIcon,
@@ -71,22 +71,24 @@ export const heroData: Hero = {
   imageSrc: heroImage,
   name: `I'm Ali Kargar.`,
   description: (
-    <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm <strong className="text-stone-100">Software Engineer</strong>[cite: 8, 15], currently working
-        at the <strong className="text-stone-100">Network and OS Laboratory</strong> [cite: 17] architecting robust 
-        error-reporting infrastructure and observability stacks[cite: 19, 22].
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, I am passionate about creating <strong className="text-stone-100">efficient solutions</strong> [cite: 5] 
-        and exploring innovations in <strong className="text-stone-100">AI</strong> [cite: 34, 46] and 
-        <strong className="text-stone-100">Embedded Systems</strong>[cite: 51].
-      </p>
-    </>
-  ),
+      <>
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+          I'm a <strong className="text-stone-100">Software Engineer</strong>  
+           specializing in 
+          <strong className="text-stone-100">Python</strong>, <strong className="text-stone-100">C</strong>, 
+          and <strong className="text-stone-100">UI/UX Design</strong>. 
+        </p>
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+          I am passionate about building <strong className="text-stone-100">efficient solutions</strong> 
+          using <strong className="text-stone-100">efficient tools</strong>. 
+          also contributing as a <strong className="text-stone-100">Teaching Assistant</strong> for 
+          some courses.
+        </p>
+      </>
+    ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,11 +106,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Motivated Computer Engineering graduate with strong skills in Python and C[cite: 2, 3]. 
-  Experienced in software development, algorithms, and system design, with a focus on building scalable 
-  applications and specialized embeded systems[cite: 3, 4, 44].`,
+  description: `Experienced Software Engineer at the Network and OS Laboratory with a
+    background in Computer Engineering from IUST. I specialize in developing scalable
+    applications and observability stacks using Python, C, and React, while maintaining
+    a strong interest in Deep Learning and Embedded Systems.
+    I have contributed to the academic community
+    as a Teaching Assistant for some courses.`,
   aboutItems: [
     {label: 'Location', text: 'Tehran, Iran', Icon: MapIcon},
+    {label: 'Age', text: '22', Icon: CalendarIcon},
     // {label: 'Nationality', text: 'Iranian', Icon: FlagIcon},
     {label: 'Interests', text: 'Deep Learning, OS, Automation,UI/UX Design', Icon: SparklesIcon},
     {label: 'Study', text: 'Iran University of Science & Technology', Icon: AcademicCapIcon},
@@ -134,7 +140,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Software Development',
+    name: 'Software Development & Design',
     skills: [
       {
         name: 'Python',
@@ -152,73 +158,107 @@ export const skills: SkillGroup[] = [
         name: 'SQL',
         level: 6,
       },
+      {
+        name: 'Java',
+        level: 6,
+      },
+      {
+        name: 'C#',
+        level: 5,
+      },
+      {
+        name: 'Figma (UI/UX Design)',
+        level: 6,
+      },
     ],
   },
   {
     name: 'Systems & Tools',
     skills: [
       {
-        name: 'Linux',
+        name: 'Linux & Shell Scripting',
         level: 8,
       },
       {
-        name: 'Observability (Prometheus/Grafana)',
+        name: 'Observability (Prometheus, Grafana, Loki)',
         level: 7,
       },
       {
-        name: 'ANTLR4',
-        level: 7,
+        name: 'Git / Azure',
+        level: 9,
       },
       {
-        name: 'Git/Azure',
-        level: 7,
+        name: 'Networking (Wireshark, Cisco Packet Tracer)',
+        level: 6,
       },
+      {
+        name: 'ANTLR4 / Compiler Construction',
+        level: 5,
+      },
+
     ],
   },
   {
-    name: 'Embedded & AI',
+    name: 'Embedded & Hardware',
     skills: [
       {
-        name: 'Microcontrollers (ESP32/Arduino)',
-        level: 8,
-      },
-      {
-        name: 'Deep Learning (PyTorch)',
+        name: 'Microcontrollers (ESP32, Arduino)',
         level: 7,
       },
       {
-        name: 'Java (Android)',
+        name: 'Hardware Design (VHDL, Proteus, LVGL)',
+        level: 7,
+      },
+      {
+        name: 'Assembly',
         level: 6,
       },
     ],
   },
+  {
+    name: 'AI & Data Science',
+    skills: [
+      {
+        name: 'Deep Learning (PyTorch, VGG-16)',
+        level: 4,
+      },
+      {
+        name: 'Reinforcement Learning',
+        level: 4,
+      },
+      {
+        name: 'Data Structures & Algorithms',
+        level: 8,
+      },
+    ],
+  },
 ];
-
 /**
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-  {
-    title: 'Gymbato',
-    description: 'Online Sports Coaching Platform connecting users with coaches using React and Material UI[cite: 40, 41].',
-    url: 'https://github.com/Sahabi-Team/Front-end',
-    image: porfolioImage1,
-  },
+
   {
     title: 'MCP Server with DSL GO',
-    description: 'Enables Claude AI to interact with a custom Domain-Specific Language using ANTLR4 and Python[cite: 42, 45].',
+    description: 'Enables Claude AI to interact with a custom Domain-Specific Language using ANTLR4 and Python.',
     url: 'https://github.com/alikargar82/MCP-server-for-course-management-with-DSL',
     image: porfolioImage2,
   },
   {
+    title: 'Gymbato',
+    description: 'Online Sports Coaching Platform connecting users with coaches using React and Material UI.',
+    url: 'https://github.com/Sahabi-Team/Front-end',
+    image: porfolioImage1,
+  },
+  {
     title: 'Saliency Map Prediction',
-    description: 'Deep learning model for visual prediction using transfer learning with VGG-16[cite: 46, 47].',
+    description: 'Deep learning model for visual prediction using transfer learning with VGG-16.',
     url: 'https://github.com/Pouya-Ta/Improving-the-Accuracy-of-Saliency-Prediction-models-using-Transfer-Learning',
     image: porfolioImage3,
   },
   {
     title: 'HUD System',
-    description: 'Head-Up Display using ESP32 and Android via BLE with LVGL for embedded visualization[cite: 50, 52].',
+    description: 'Head-Up Display using ESP32 and Android via BLE with LVGL for embedded visualization.',
     url: 'https://github.com/alikargar82/HUD-Display',
     image: porfolioImage4,
   },
@@ -229,16 +269,20 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: '2026',
-    location: 'Iran University of Science and Technology (IUST)',
-    title: 'Computer Engineering',
-    content: <p>Selected as a Distinguished Student and ranked in the top 5% of the class[cite: 85, 86].</p>,
+    date: '2022 - 2026',
+    location: 'Computer Engineering bachelor\'s degree',
+    title: 'Iran University of Science and Technology (IUST)',
+    content: <p>Focused on mastering core principles of software development, 
+      including Python, C, and algorithms. Developed scalable applications and 
+      deep learning models while gaining hands-on experience in Linux and system design.
+      Additionally, served as a Teaching Assistant for the System Design course, providing 
+      technical support and guidance to peers.</p>,
   },
   {
-    date: '2022',
-    location: 'Sampad Shahid Rahimifar',
-    title: 'ational University Entrance Exam (Konkoor)',
-    content: <p>Achieved a top 0.5% national ranking in the highly competitive engineering entrance examination[cite: 82, 83].</p>,
+    date: '2019 - 2022',
+    location: 'High School Diploma',
+    title: 'Sampad Shahid Rahimifar',
+    content: <p>Actively participated in both the Physics and Computer Science Olympiads.</p>,
   },
 ];
 
@@ -246,14 +290,15 @@ export const experience: TimelineItem[] = [
   {
     date: '2025 - 2026',
     location: 'Network and OS Laboratory',
-    title: 'Software Engineer',
+    title: 'Software Developer and Researcher',
     content: (
       <p>
-        Integrated Crashpad and Breakpad for automated core dump analysis[cite: 19]. 
-        Configured Prometheus, Grafana, and Loki to monitor system health and enhance log management[cite: 22, 23].
+        Integrated Crashpad and Breakpad for automated core dump analysis. 
+        Configured Prometheus, Grafana, and Loki to monitor system health and enhance log management.
       </p>
     ),
   },
+
 ];
 
 /**
@@ -264,13 +309,13 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'IUST Achievement',
-      text: 'Recognized as a Distinguished Student, maintaining excellence in Computer Engineering[cite: 84, 85].',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      text: 'Recognized as a Distinguished Student, maintaining excellence in Computer Engineering.',
+      image: '',
     },
     {
-      name: 'IUST Achievement',
-      text: 'Achieved a top 0.5% national ranking in the highly competitive engineering entrance examination[cite: 84, 85].',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'ational University Entrance Exam (Konkoor)',
+      text: 'Achieved a top 0.5% national ranking in the highly competitive engineering entrance examination.',
+      image: '',
     },
   ],
 };
@@ -280,7 +325,7 @@ export const testimonial: TestimonialSection = {
  */
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Available for innovative software projects and system design discussions[cite: 5].',
+  description: 'Available for innovative software projects.',
   items: [
     {
       type: ContactType.Email,
@@ -294,8 +339,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.LinkedIn,
-      text: '@Alikargar04',
-      href: 'https://www.linkedin.com/Alikargar04/',
+      text: 'Alikargar04',
+      href: 'https://www.linkedin.com/in/alikargar04/',
     },
     {
       type: ContactType.Github,
@@ -311,4 +356,5 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Alikargar82'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/Alikargar04/'},
+
 ];
