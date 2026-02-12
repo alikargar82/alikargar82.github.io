@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Ali Kargar',
+  description: "Professional portfolio of Ali Kargar, Software Engineer",
 };
 
 /**
@@ -69,18 +69,18 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Ali Kargar.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm <strong className="text-stone-100">Software Engineer</strong>[cite: 8, 15], currently working
+        at the <strong className="text-stone-100">Network and OS Laboratory</strong> [cite: 17] architecting robust 
+        error-reporting infrastructure and observability stacks[cite: 19, 22].
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, I am passionate about creating <strong className="text-stone-100">efficient solutions</strong> [cite: 5] 
+        and exploring innovations in <strong className="text-stone-100">AI</strong> [cite: 34, 46] and 
+        <strong className="text-stone-100">Embedded Systems</strong>[cite: 51].
       </p>
     </>
   ),
@@ -104,16 +104,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Motivated Computer Engineering graduate with strong skills in Python and C[cite: 2, 3]. 
+  Experienced in software development, algorithms, and system design, with a focus on building scalable 
+  applications and specialized embeded systems[cite: 3, 4, 44].`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Tehran, Iran', Icon: MapIcon},
+    // {label: 'Nationality', text: 'Iranian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Deep Learning, OS, Automation,UI/UX Design', Icon: SparklesIcon},
+    {label: 'Study', text: 'Iran University of Science & Technology', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Network and OS Laboratory', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -125,67 +124,71 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'Persian',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
+        name: 'English',
+        level: 8,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Software Development',
     skills: [
       {
-        name: 'React',
+        name: 'Python',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'C/C++',
+        level: 9,
+      },
+      {
+        name: 'React',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'SQL',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Systems & Tools',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Linux',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Observability (Prometheus/Grafana)',
+        level: 7,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'ANTLR4',
+        level: 7,
+      },
+      {
+        name: 'Git/Azure',
+        level: 7,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Embedded & AI',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'Microcontrollers (ESP32/Arduino)',
+        level: 8,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Deep Learning (PyTorch)',
+        level: 7,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Java (Android)',
+        level: 6,
       },
     ],
   },
@@ -196,111 +199,58 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Gymbato',
+    description: 'Online Sports Coaching Platform connecting users with coaches using React and Material UI[cite: 40, 41].',
+    url: 'https://github.com/Sahabi-Team/Front-end',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'MCP Server with DSL GO',
+    description: 'Enables Claude AI to interact with a custom Domain-Specific Language using ANTLR4 and Python[cite: 42, 45].',
+    url: 'https://github.com/alikargar82/MCP-server-for-course-management-with-DSL',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Saliency Map Prediction',
+    description: 'Deep learning model for visual prediction using transfer learning with VGG-16[cite: 46, 47].',
+    url: 'https://github.com/Pouya-Ta/Improving-the-Accuracy-of-Saliency-Prediction-models-using-Transfer-Learning',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'HUD System',
+    description: 'Head-Up Display using ESP32 and Android via BLE with LVGL for embedded visualization[cite: 50, 52].',
+    url: 'https://github.com/alikargar82/HUD-Display',
     image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2026',
+    location: 'Iran University of Science and Technology (IUST)',
+    title: 'Computer Engineering',
+    content: <p>Selected as a Distinguished Student and ranked in the top 5% of the class[cite: 85, 86].</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2022',
+    location: 'Sampad Shahid Rahimifar',
+    title: 'ational University Entrance Exam (Konkoor)',
+    content: <p>Achieved a top 0.5% national ranking in the highly competitive engineering entrance examination[cite: 82, 83].</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: '2025 - 2026',
+    location: 'Network and OS Laboratory',
+    title: 'Software Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Integrated Crashpad and Breakpad for automated core dump analysis[cite: 19]. 
+        Configured Prometheus, Grafana, and Loki to monitor system health and enhance log management[cite: 22, 23].
       </p>
     ),
   },
@@ -313,19 +263,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'IUST Achievement',
+      text: 'Recognized as a Distinguished Student, maintaining excellence in Computer Engineering[cite: 84, 85].',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'IUST Achievement',
+      text: 'Achieved a top 0.5% national ranking in the highly competitive engineering entrance examination[cite: 84, 85].',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
   ],
 };
@@ -333,30 +278,29 @@ export const testimonial: TestimonialSection = {
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Available for innovative software projects and system design discussions[cite: 5].',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'Alikargar0901@gmail.com',
+      href: 'mailto:Alikargar0901@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Tehran, Iran',
+      href: 'https://www.google.com/maps/place/Tehran,+Iran',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: '@Alikargar04',
+      href: 'https://www.linkedin.com/Alikargar04/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Alikargar82',
+      href: 'https://github.com/Alikargar82',
     },
   ],
 };
@@ -365,9 +309,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Alikargar82'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/Alikargar04/'},
 ];
