@@ -1,10 +1,10 @@
-import {BoltIcon, ChevronUpIcon} from '@heroicons/react/24/solid';
+// import {BoltIcon, ChevronUpIcon} from '@heroicons/react/24/solid';
 import {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
 import Socials from '../Socials';
 
-const currentYear = new Date().getFullYear();
+// const currentYear = new Date().getFullYear();
 
 const Footer: FC = memo(() => (
   <div className="relative bg-neutral-900 px-4 pb-6 pt-12 sm:px-8 sm:pb-8 sm:pt-14">
@@ -12,7 +12,7 @@ const Footer: FC = memo(() => (
       <a
         className="rounded-full bg-neutral-100 p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
         href={`/#${SectionId.Hero}`}>
-        <ChevronUpIcon className="h-6 w-6 bg-transparent sm:h-8 sm:w-8" />
+        {/* <ChevronUpIcon className="h-6 w-6 bg-transparent sm:h-8 sm:w-8" /> */}
       </a>
     </div>
     <div className="flex flex-col items-center gap-y-6">
