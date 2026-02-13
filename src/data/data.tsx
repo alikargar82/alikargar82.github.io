@@ -75,7 +75,7 @@ export const heroData: Hero = {
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
           I'm a <strong className="text-stone-100">Software Engineer </strong>  
            specializing in 
-          <strong className="text-stone-100"> Python</strong>, <strong className="text-stone-100">C</strong>
+          <strong className="text-stone-100"> Python</strong>, <strong className="text-stone-100">C </strong>
           and <strong className="text-stone-100">UI/UX Design</strong>. 
         </p>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
