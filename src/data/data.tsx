@@ -14,16 +14,16 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';/
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+// import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+// import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 // import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 // import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 // import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 // import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 // import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
@@ -73,13 +73,13 @@ export const heroData: Hero = {
   description: (
       <>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I'm a <strong className="text-stone-100">Software Engineer</strong>  
+          I'm a <strong className="text-stone-100">Software Engineer </strong>  
            specializing in 
-          <strong className="text-stone-100">Python</strong>, <strong className="text-stone-100">C</strong>, 
+          <strong className="text-stone-100"> Python</strong>, <strong className="text-stone-100">C</strong>
           and <strong className="text-stone-100">UI/UX Design</strong>. 
         </p>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I am passionate about building <strong className="text-stone-100">efficient solutions</strong> 
+          I am passionate about building <strong className="text-stone-100">efficient solutions </strong> 
           using <strong className="text-stone-100">efficient tools</strong>. 
           also contributing as a <strong className="text-stone-100">Teaching Assistant</strong> for 
           some courses.
@@ -173,6 +173,23 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
+    name: 'AI & Data Science',
+    skills: [
+      {
+        name: 'Deep Learning (PyTorch, VGG-16)',
+        level: 4,
+      },
+      {
+        name: 'Reinforcement Learning',
+        level: 4,
+      },
+      {
+        name: 'Data Structures & Algorithms',
+        level: 8,
+      },
+    ],
+  },
+  {
     name: 'Systems & Tools',
     skills: [
       {
@@ -215,23 +232,7 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
-  {
-    name: 'AI & Data Science',
-    skills: [
-      {
-        name: 'Deep Learning (PyTorch, VGG-16)',
-        level: 4,
-      },
-      {
-        name: 'Reinforcement Learning',
-        level: 4,
-      },
-      {
-        name: 'Data Structures & Algorithms',
-        level: 8,
-      },
-    ],
-  },
+
 ];
 /**
  * Portfolio section
@@ -248,19 +249,19 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Gymbato',
     description: 'Online Sports Coaching Platform connecting users with coaches using React and Material UI.',
     url: 'https://github.com/Sahabi-Team/Front-end',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Saliency Map Prediction',
-    description: 'Deep learning model for visual prediction using transfer learning with VGG-16.',
-    url: 'https://github.com/Pouya-Ta/Improving-the-Accuracy-of-Saliency-Prediction-models-using-Transfer-Learning',
-    image: porfolioImage3,
+    image: porfolioImage8,
   },
   {
     title: 'HUD System',
     description: 'Head-Up Display using ESP32 and Android via BLE with LVGL for embedded visualization.',
     url: 'https://github.com/alikargar82/HUD-Display',
     image: porfolioImage4,
+  },
+  {
+    title: 'Saliency Map Prediction',
+    description: 'Deep learning model for visual prediction using transfer learning with VGG-16.',
+    url: 'https://github.com/Pouya-Ta/Improving-the-Accuracy-of-Saliency-Prediction-models-using-Transfer-Learning',
+    image: porfolioImage10,
   },
 ];
 
@@ -313,7 +314,7 @@ export const testimonial: TestimonialSection = {
       image: '',
     },
     {
-      name: 'ational University Entrance Exam (Konkoor)',
+      name: 'national University Entrance Exam (Konkoor)',
       text: 'Achieved a top 0.5% national ranking in the highly competitive engineering entrance examination.',
       image: '',
     },
