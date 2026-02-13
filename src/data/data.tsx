@@ -116,7 +116,7 @@ export const aboutData: About = {
     {label: 'Location', text: 'Tehran, Iran', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
     // {label: 'Nationality', text: 'Iranian', Icon: FlagIcon},
-    {label: 'Interests', text: 'Deep Learning, OS, Automation,UI/UX Design', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Deep Learning, OS, UI/UX Design', Icon: SparklesIcon},
     {label: 'Study', text: 'Iran University of Science & Technology', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Network and OS Laboratory', Icon: BuildingOffice2Icon},
   ],
@@ -135,6 +135,23 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'English',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'AI & Data Science',
+    skills: [
+      {
+        name: 'Deep Learning (PyTorch, VGG-16)',
+        level: 4,
+      },
+      {
+        name: 'Reinforcement Learning',
+        level: 4,
+      },
+      {
+        name: 'Data Structures & Algorithms',
         level: 8,
       },
     ],
@@ -169,23 +186,6 @@ export const skills: SkillGroup[] = [
       {
         name: 'Figma (UI/UX Design)',
         level: 6,
-      },
-    ],
-  },
-  {
-    name: 'AI & Data Science',
-    skills: [
-      {
-        name: 'Deep Learning (PyTorch, VGG-16)',
-        level: 4,
-      },
-      {
-        name: 'Reinforcement Learning',
-        level: 4,
-      },
-      {
-        name: 'Data Structures & Algorithms',
-        level: 8,
       },
     ],
   },
@@ -243,13 +243,13 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'MCP Server with DSL GO',
     description: 'Enables Claude AI to interact with a custom Domain-Specific Language using ANTLR4 and Python.',
     url: 'https://github.com/alikargar82/MCP-server-for-course-management-with-DSL',
-    image: porfolioImage2,
+    image: porfolioImage4,
   },
   {
     title: 'Gymbato',
     description: 'Online Sports Coaching Platform connecting users with coaches using React and Material UI.',
     url: 'https://github.com/Sahabi-Team/Front-end',
-    image: porfolioImage8,
+    image: porfolioImage4,
   },
   {
     title: 'HUD System',
@@ -261,7 +261,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Saliency Map Prediction',
     description: 'Deep learning model for visual prediction using transfer learning with VGG-16.',
     url: 'https://github.com/Pouya-Ta/Improving-the-Accuracy-of-Saliency-Prediction-models-using-Transfer-Learning',
-    image: porfolioImage10,
+    image: porfolioImage4,
   },
 ];
 

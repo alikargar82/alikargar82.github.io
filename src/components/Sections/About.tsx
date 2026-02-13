@@ -9,7 +9,7 @@ const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.About}>
-      <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
+      <div className={classNames('grid grid-cols-1 gap-y-4 gap-5', {'md:grid-cols-4': !!profileImageSrc})}>
         {!!profileImageSrc && (
           <div className="col-span-1 flex justify-center md:justify-start">
             <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-80 md:w-80">
@@ -17,8 +17,8 @@ const About: FC = memo(() => {
             </div>
           </div>
         )}
-        <div className={classNames('col-span-1 flex flex-col gap-y-6', {'md:col-span-3': !!profileImageSrc})}>
-          <div className="flex flex-col gap-y-2">
+        <div className={classNames('col-span-1 flex flex-col gap-y-5', {'md:col-span-3': !!profileImageSrc})}>
+          <div className="flex flex-col gap-y-1">
             <h2 className="text-2xl font-bold text-white">About me</h2>
             <p className="prose prose-sm text-gray-300 sm:prose-base">{description}</p>
           </div>
